@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgar Sousa Costa | Software Engineer & Security Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        dark: '#ffffff',
+                        card: '#f8fafc',
+                        border: '#e2e8f0',
+                        accent: '#4f46e5',
+                        accentHover: '#4338ca'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-slate-900">
+                Edgar Sousa Costa
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-indigo-600 transition-colors">About</a>
+                <a href="#experience" class="hover:text-indigo-600 transition-colors">Experience</a>
+                <a href="#education" class="hover:text-indigo-600 transition-colors">Education</a>
+                <a href="#skills" class="hover:text-indigo-600 transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-indigo-600 transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="flex items-center gap-1 bg-slate-100 border border-slate-200 rounded-full px-3 py-1 text-xs font-semibold">
+                    <a href="index.html" class="text-indigo-600 font-bold">EN</a>
+                    <span class="text-slate-300">/</span>
+                    <a href="pt.html" class="text-slate-500 hover:text-slate-900">PT</a>
+                </div>
+                <a href="assets/Profile.pdf" download="Edgar_Sousa_Costa_CV.pdf" class="hidden sm:inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition-all shadow-sm">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    Download CV
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-24 pb-16 px-6 border-b border-slate-200 bg-white">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                <img src="assets/me.jfif" alt="Edgar Sousa Costa" class="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-2 border-slate-200 shadow-xl">
+            </div>
+
+            <div class="text-center md:text-left flex-1">
+              
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
+                    Edgar Sousa Costa
+                </h1>
+                <p class="text-lg text-slate-600 max-w-2xl mb-8 leading-relaxed">
+                    Software Engineer, CISO & CTO at Webminds Solutions. Cisco Certified Instructor and Computer Science Teacher passionate about secure software development and network architecture.
+                </p>
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                    <a href="#contact" class="px-6 py-3 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors shadow-md shadow-indigo-600/10">
+                        Get in Touch
+                    </a>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 border-b border-slate-200 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">About</h2>
+            <h3 class="text-3xl font-bold text-slate-900 mb-8">Profile Overview</h3>
+            <div class="grid md:grid-cols-2 gap-8 text-slate-600 leading-relaxed">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <h4 class="text-slate-900 font-bold text-lg mb-3">Technical & Leadership Focus</h4>
+                    <p>
+                        I specialize in building robust backend solutions with Python and Django, implementing enterprise security protocols, and managing IT infrastructure. My leadership role as CISO and CTO allows me to blend high-level strategy with hands-on technical architecture.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <h4 class="text-slate-900 font-bold text-lg mb-3">Academic & Business Background</h4>
+                    <p>
+                        Complementing my engineering background, I teach Computer Science at secondary and higher education levels. My prior 4-year experience managing retail operations provided strong commercial communication, crisis management, and client relation skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 border-b border-slate-200 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Career Path</h2>
+            <h3 class="text-3xl font-bold text-slate-900 mb-8">Professional Experience</h3>
+
+            <div class="space-y-4">
+                <!-- Upcoming Position -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-indigo-200 relative shadow-sm">
+                    <span class="absolute top-6 right-6 text-xs font-mono px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 font-semibold">Sep 2026 – Present</span>
+                    <h4 class="text-lg font-bold text-slate-900">Computer Science Teacher</h4>
+                    <p class="text-sm text-indigo-600 font-semibold mb-3">Grupo TechAcademy</p>
+                    <p class="text-sm text-slate-600">Instructing specialized modules in computer science, software engineering concepts, and practical development skills.</p>
+                </div>
+
+                <!-- Current Positions -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-slate-300 transition-colors shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">CISO (Chief Information Security Officer)</h4>
+                            <p class="text-sm text-indigo-600 font-semibold">Webminds Solutions</p>
+                        </div>
+                        <span class="text-xs font-mono text-slate-600 bg-slate-200 px-3 py-1 rounded-full w-fit">Jul 2026 – Present</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Overseeing organizational information security strategies, regulatory compliance, threat response, and security governance.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-slate-300 transition-colors shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">Cisco Instructor</h4>
+                            <p class="text-sm text-indigo-600 font-semibold">Cisco Networking Academy</p>
+                        </div>
+                        <span class="text-xs font-mono text-slate-600 bg-slate-200 px-3 py-1 rounded-full w-fit">Mar 2026 – Present</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Delivering certified training modules in routing, switching, cybersecurity, and enterprise networking concepts.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-slate-300 transition-colors shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">CTO (Chief Technology Officer)</h4>
+                            <p class="text-sm text-indigo-600 font-semibold">Webminds Solutions</p>
+                        </div>
+                        <span class="text-xs font-mono text-slate-600 bg-slate-200 px-3 py-1 rounded-full w-fit">Jan 2025 – Present</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Leading software development operations, cloud strategy, infrastructure choices, and system design decisions.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-slate-300 transition-colors shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">Computer Science Teacher</h4>
+                            <p class="text-sm text-indigo-600 font-semibold">Escola Profissional de Gaia (EP Gaia)</p>
+                        </div>
+                        <span class="text-xs font-mono text-slate-600 bg-slate-200 px-3 py-1 rounded-full w-fit">Sep 2025 – Present</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Teaching web technologies, databases, networking, and programming fundamentals to students.</p>
+                </div>
+
+                <!-- Past Positions -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-slate-300 transition-colors shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">Manager</h4>
+                            <p class="text-sm text-indigo-600 font-semibold">Webminds Solutions</p>
+                        </div>
+                        <span class="text-xs font-mono text-slate-600 bg-slate-200 px-3 py-1 rounded-full w-fit">Mar 2025 – Jul 2026</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Coordinated project execution, client relations, resource management, and operational workflows.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-slate-300 transition-colors shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">IT Technician</h4>
+                            <p class="text-sm text-indigo-600 font-semibold">Webminds Solutions</p>
+                        </div>
+                        <span class="text-xs font-mono text-slate-600 bg-slate-200 px-3 py-1 rounded-full w-fit">Jun 2024 – Dec 2024</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Maintained hardware/software infrastructure, resolved server issues, and managed technical support systems.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:border-slate-300 transition-colors shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-900">Computer Science Lecturer / Teacher</h4>
+                            <p class="text-sm text-indigo-600 font-semibold">ISTEC / IPTA / EPRD / AE Diogo Macedo</p>
+                        </div>
+                        <span class="text-xs font-mono text-slate-600 bg-slate-200 px-3 py-1 rounded-full w-fit">Past Experience</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Delivered technical courses in algorithm design, web platforms, and network systems across educational institutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 border-b border-slate-200 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Qualifications</h2>
+            <h3 class="text-3xl font-bold text-slate-900 mb-8">Education & Certifications</h3>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <h4 class="text-lg font-bold text-slate-900 mb-4">Academic Background</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="font-bold text-slate-900">M.Sc. in Computer Science Teaching</h5>
+                            <p class="text-xs text-slate-500 font-mono">Lusófona University Lisbon (2024 – 2029)</p>
+                        </div>
+                        <div class="border-t border-slate-100 pt-3">
+                            <h5 class="font-bold text-slate-900">Postgraduate in Applied Cybersecurity</h5>
+                            <p class="text-xs text-slate-500 font-mono">Lusófona University Porto (2024)</p>
+                        </div>
+                        <div class="border-t border-slate-100 pt-3">
+                            <h5 class="font-bold text-slate-900">B.Sc. in Software Engineering</h5>
+                            <p class="text-xs text-slate-500 font-mono">ULP - Lusófona University Porto (2020 – 2024)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <h4 class="text-lg font-bold text-slate-900 mb-4">Certifications (28 Total)</h4>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+                            <strong class="text-slate-900">BlockChain, Web3 & Tokenization</strong> (IST - May 2026)
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-indigo-600"></span> Digital Content Accessibility
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-indigo-600"></span> The Future of Industry & Tech Trends
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-indigo-600"></span> Classified Information Security Intro
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-indigo-600"></span> Startup Creation & Tech Entrepreneurship
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 border-b border-slate-200 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Capabilities</h2>
+            <h3 class="text-3xl font-bold text-slate-900 mb-8">Technical Stack</h3>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-2">Backend & Dev</h4>
+                    <p class="text-xs text-slate-600">Django, REST APIs, Python, COBOL, JavaScript, HTML5/CSS3.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-2">Cybersecurity</h4>
+                    <p class="text-xs text-slate-600">Risk Assessment, Compliance, Policy Management, Vulnerabilities.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-2">Networking</h4>
+                    <p class="text-xs text-slate-600">Cisco Enterprise Architecture, Routing/Switching, System Admin.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="font-bold text-slate-900 mb-2">Languages</h4>
+                    <p class="text-xs text-slate-600">Portuguese (Native), English (Full Professional).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Connect</h2>
+            <h3 class="text-3xl font-bold text-slate-900 mb-8">Get In Touch</h3>
+
+            <div class="grid sm:grid-cols-3 gap-4 mb-8">
+                <a href="mailto:profissional@edgarsousacosta.pt" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-indigo-500 transition-colors shadow-sm">
+                    <span class="block text-xs text-slate-400 mb-1">Email</span>
+                    <span class="text-xs sm:text-sm font-semibold text-slate-900 break-all">profissional@edgarsousacosta.pt</span>
+                </a>
+                <a href="tel:+351912204162" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-indigo-500 transition-colors shadow-sm">
+                    <span class="block text-xs text-slate-400 mb-1">Phone</span>
+                    <span class="text-sm font-semibold text-slate-900">+351 912 204 162</span>
+                </a>
+                <a href="https://www.linkedin.com/in/edgarsous" target="_blank" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-indigo-500 transition-colors shadow-sm">
+                    <span class="block text-xs text-slate-400 mb-1">LinkedIn</span>
+                    <span class="text-sm font-semibold text-slate-900">edgarsous</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-6 border-t border-slate-200 bg-white text-center text-xs text-slate-500">
+        &copy; 2026 Edgar Sousa Costa. All rights reserved.
+    </footer>
+</body>
+</html>
